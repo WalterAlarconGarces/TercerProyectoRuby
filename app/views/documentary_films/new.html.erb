@@ -1,0 +1,31 @@
+<%= form_with model: @DocumentaryFilm, method: :post do |form| %>
+    <div class="col-4">
+        <div>
+        <%= form.label :name, "name", class: "form-label" %>
+        <%= form.text_field :name, class: "form-control" %>
+        </div>
+    <div>
+         <%= form.label :synopsis, "synopsis", class: "form-label" %>
+          <%= form.text_field :synopsis, class: "form-control" %>
+    </div>
+    <div>
+         <%= form.label :director, "director", class: "form-label" %>
+          <%= form.text_field :director, class: "form-control" %>
+    </div>
+    <div>
+         <%= form.submit "Submit", class: "btn btn-primary" %>
+    </div>
+    </div>
+    <% end %>
+
+
+
+
+
+    #esto estaba en index.html
+    <form action="documentary_films/create" method="get" >
+<input name="name" value="name">
+<input name="synopsis" value="synopisis">
+<input name="director" value="director">
+<input type="submit" value="Send"> 
+</form>
