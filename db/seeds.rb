@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+10.times do |i|
+    Series.create(name: "Name {i}", synopsis: "synopsis {i}", director: "director {i}")
+    Movie.create(name: "Name {i}", synopsis: "synopsis {i}", director: "director {i}")
+    DocumentaryFilm.create(name: "Name {i}", synopsis: "synopsis {i}", director: "director {i}")
+    end
+    
