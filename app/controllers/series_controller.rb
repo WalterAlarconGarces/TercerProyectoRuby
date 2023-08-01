@@ -1,6 +1,7 @@
 class SeriesController < ApplicationController
   def index
     @Series = Series.all
+    
   end
   
   def series_params
