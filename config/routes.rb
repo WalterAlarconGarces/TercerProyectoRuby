@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'series', to: 'series#index'
   get 'series/create', to: 'series#create'
   get 'series/new', to: 'series#new'
-  post 'series', to: 'series#create'
+  post 'series/new', to: 'series#create'
 
   get 'documentary_films', to: 'documentary_films#index'
   get 'documentary_films/create', to: 'documentary_films#create'

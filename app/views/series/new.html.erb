@@ -1,0 +1,19 @@
+<%= form_with model: @Series, url: '/series/new', method: :post do |form| %>
+    <div class="col-4">
+        <div>
+        <%= form.label :name, "name", class: "form-label" %>
+        <%= form.text_field :name, class: "form-control" %>
+        </div>
+    <div>
+         <%= form.label :synopsis, "synopsis", class: "form-label" %>
+          <%= form.text_field :synopsis, class: "form-control" %>
+    </div>
+    <div>
+         <%= form.label :director, "director", class: "form-label" %>
+          <%= form.text_field :director, class: "form-control" %>
+    </div>
+    <div>
+         <%= form.submit "Submit", class: "btn btn-primary" %>
+    </div>
+    </div>
+<% end %>
